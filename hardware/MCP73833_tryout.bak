@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:MCP73833_tryout-cache
 EELAYER 29 0
 EELAYER END
 $Descr User 8500 5500
@@ -13,17 +14,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L taobao-components:MCP73833 U1
-U 1 1 5D03B616
-P 3750 2350
-F 0 "U1" H 3750 3115 50  0000 C CNN
-F 1 "MCP73833" H 3750 3024 50  0000 C CNN
-F 2 "footprint-lib:MCP73833" H 3750 1500 50  0001 C CNN
-F 3 "" H 3750 1500 50  0001 C CNN
-	1    3750 2350
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:+5V #PWR0101
 U 1 1 5D03BD3D
@@ -155,18 +145,16 @@ Wire Wire Line
 $Comp
 L power:GND #PWR0103
 U 1 1 5D04CF9B
-P 4750 3000
-F 0 "#PWR0103" H 4750 2750 50  0001 C CNN
-F 1 "GND" H 4755 2827 50  0000 C CNN
-F 2 "" H 4750 3000 50  0001 C CNN
-F 3 "" H 4750 3000 50  0001 C CNN
-	1    4750 3000
+P 4750 3600
+F 0 "#PWR0103" H 4750 3350 50  0001 C CNN
+F 1 "GND" H 4755 3427 50  0000 C CNN
+F 2 "" H 4750 3600 50  0001 C CNN
+F 3 "" H 4750 3600 50  0001 C CNN
+	1    4750 3600
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	4450 2750 4750 2750
-Wire Wire Line
-	4750 2750 4750 3000
 $Comp
 L power:GND #PWR0104
 U 1 1 5D04D6BB
@@ -2675,4 +2663,24 @@ Wire Wire Line
 	950  4600 950  4850
 Text Notes 3950 4050 0    79   ~ 0
 3 DRC error accepted
+Wire Wire Line
+	3750 3100 3750 3250
+Wire Wire Line
+	3750 3250 4750 3250
+Wire Wire Line
+	4750 2750 4750 3250
+Connection ~ 4750 3250
+Wire Wire Line
+	4750 3250 4750 3600
+$Comp
+L taobao-components:MCP73833_DFN U?
+U 1 1 5D0406D8
+P 3750 2350
+F 0 "U?" H 3750 3115 50  0000 C CNN
+F 1 "MCP73833_DFN" H 3750 3024 50  0000 C CNN
+F 2 "footprint-lib:MCP73833_DFN" H 3750 1150 50  0001 C CNN
+F 3 "" H 3750 1150 50  0001 C CNN
+	1    3750 2350
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

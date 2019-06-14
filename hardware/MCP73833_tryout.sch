@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:MCP73833_tryout-cache
 EELAYER 29 0
 EELAYER END
 $Descr User 8500 5500
@@ -13,17 +14,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L taobao-components:MCP73833 U1
-U 1 1 5D03B616
-P 3750 2350
-F 0 "U1" H 3750 3115 50  0000 C CNN
-F 1 "MCP73833" H 3750 3024 50  0000 C CNN
-F 2 "footprint-lib:MCP73833" H 3750 1500 50  0001 C CNN
-F 3 "" H 3750 1500 50  0001 C CNN
-	1    3750 2350
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:+5V #PWR0101
 U 1 1 5D03BD3D
@@ -2682,4 +2672,15 @@ Wire Wire Line
 Connection ~ 4750 3250
 Wire Wire Line
 	4750 3250 4750 3600
+$Comp
+L taobao-components:MCP73833_DFN U1
+U 1 1 5D0406D8
+P 3750 2350
+F 0 "U1" H 3750 3115 50  0000 C CNN
+F 1 "MCP73833_DFN" H 3750 3024 50  0000 C CNN
+F 2 "footprint-lib:MCP73833_DFN" H 3750 1150 50  0001 C CNN
+F 3 "" H 3750 1150 50  0001 C CNN
+	1    3750 2350
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
